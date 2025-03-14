@@ -105,7 +105,7 @@ function collisionDetection() {
 
 function gameOver() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    window.location.href = 'https://www.google.com/';
+    window.location.href = 'https://cn.pornhub.com/';
 }
 
 function draw() {
