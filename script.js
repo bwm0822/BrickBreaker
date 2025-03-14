@@ -151,7 +151,12 @@ document.body.appendChild(rightButton);
 
 leftButton.addEventListener('mousedown', () => { leftPressed = true; });
 leftButton.addEventListener('mouseup', () => { leftPressed = false; });
+leftButton.addEventListener('touchstart', () => { leftPressed = true; });
+leftButton.addEventListener('touchend', () => { leftPressed = false; });
+
 rightButton.addEventListener('mousedown', () => { rightPressed = true; });
 rightButton.addEventListener('mouseup', () => { rightPressed = false; });
+rightButton.addEventListener('touchstart', () => { rightPressed = true; });
+rightButton.addEventListener('touchend', () => { rightPressed = false; });
 
 draw();
