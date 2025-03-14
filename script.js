@@ -105,7 +105,7 @@ function collisionDetection() {
 
 function gameOver() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    window.location.href = 'https://cn.pornhub.com/';
+    window.location.href = 'https://www.google.com/';
 }
 
 function draw() {
@@ -149,14 +149,7 @@ rightButton.style.bottom = '10px';
 rightButton.style.left = 'calc(50% + 70px)';
 document.body.appendChild(rightButton);
 
-leftButton.addEventListener('mousedown', () => { leftPressed = true; });
-leftButton.addEventListener('mouseup', () => { leftPressed = false; });
-leftButton.addEventListener('touchstart', () => { leftPressed = true; });
-leftButton.addEventListener('touchend', () => { leftPressed = false; });
-
-rightButton.addEventListener('mousedown', () => { rightPressed = true; });
-rightButton.addEventListener('mouseup', () => { rightPressed = false; });
-rightButton.addEventListener('touchstart', () => { rightPressed = true; });
-rightButton.addEventListener('touchend', () => { rightPressed = false; });
+leftButton.addEventListener('click', () => { leftPressed = true; setTimeout(() => { leftPressed = false; }, 100); });
+rightButton.addEventListener('click', () => { rightPressed = true; setTimeout(() => { rightPressed = false; }, 100); });
 
 draw();
